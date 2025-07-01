@@ -1,3 +1,4 @@
+import PDFDropzone from "@/components/PDFDropzone";
 import { Button } from "@/components/ui/button";
 import { MoveRight } from "lucide-react";
 import Link from "next/link";
@@ -35,7 +36,9 @@ export default function Home() {
         {/* PDF Dropzone */}
         <div className="mt-12 flex justify-center">
           <div className="relative w-full max-w-3xl rounded-lg border border-gray-200 bg-white shadow-lg overflow-hidden">
-            <div className="p-6 md:p-8 relative">Drop here...</div>
+            <div className="p-6 md:p-8 relative">
+              <PDFDropzone />
+            </div>
           </div>
         </div>
       </section>
